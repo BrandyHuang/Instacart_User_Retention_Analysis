@@ -60,7 +60,7 @@ To group users by behavioral traits and enable personalized insights, we applied
 ## ⏳ Survival Analysis: Kaplan-Meier Method
 
 To estimate user retention over time, we applied the **Kaplan-Meier survival analysis** using the `lifelines` Python package in Google Colab.
-[![Kaplan-Meier Result](./screenshot/Kaplan-Meier.png)]
+[![Kaplan-Meier Result](./screenshot/KaplanMeier.png)]
 
 ### 🧠 What We Did
 - Modeled **time-to-churn** based on days between user orders.
