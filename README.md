@@ -7,7 +7,7 @@ This project analyzes user purchase behavior on Instacart to uncover actionable 
 - **Goal**:
   - Understand Instacart user behavior from first order through long-term retention and churn.
 - **Data Sources**:
-  - This project uses data from the [Kaggle Instacart Market Basket Analysis competition](https://www.kaggle.com/competitions/instacart-market-basket-analysis), which contains anonymized grocery shopping behavior for over 200,000 Instacart users. The dataset includes 6 core tables:
+  - This project uses data from the [Kaggle Instacart Market Basket Analysis competition](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis), which contains anonymized grocery shopping behavior for over 200,000 Instacart users. The dataset includes 6 core tables:
   - `orders` – Order history for each user  
   - `order_products__prior` – Products purchased in users’ prior orders  
   - `order_products__train` – Products in users' most recent orders (for training)  
