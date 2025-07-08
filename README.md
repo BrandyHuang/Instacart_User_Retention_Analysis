@@ -28,7 +28,7 @@ This project analyzes user purchase behavior on Instacart to uncover actionable 
 
 🔗 **[👉 View the Live Dashboard in Looker Studio](https://lookerstudio.google.com/reporting/be935d0a-10e1-4bcb-956a-df4bf746c59a)**
 
-![Dashboard Preview](./screenshot/Dashboard.png)(https://lookerstudio.google.com/reporting/be935d0a-10e1-4bcb-956a-df4bf746c59a)
+[![Dashboard Preview](./screenshot/Dashboard.png)](https://lookerstudio.google.com/reporting/be935d0a-10e1-4bcb-956a-df4bf746c59a)
 
 
 Explore funnel performance, churn rates, and retention trends interactively.
