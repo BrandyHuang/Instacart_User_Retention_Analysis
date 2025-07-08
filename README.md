@@ -44,17 +44,20 @@ Explore funnel performance, churn rates, and retention trends interactively.
 To group users by behavioral traits and enable personalized insights, we applied **unsupervised clustering** using BigQuery ML’s KMeans algorithm.
 ![K-Means Model](./screenshot/KMeans.png)
 
-### 🔍 Segmentation Result
+### Segmentation Result
 - Segmented users into 5 clusters and named the cluster based on feature contribution.
-| # | Segment Name                 |
-|---|------------------------------|
-| 1 | Casual Weekend Shoppers     |
-| 2 | High-Intent Bulk Shoppers   |
-| 3 | Late-Night Browsers         |
-| 4 | Regular Repeaters           |
-| 5 | Routine Essentials Buyers   |
+User Segments Overview
 
-### 🧠 What We Did
+| Cluster | Key Behaviors                                      | Suggested Name                  |
+|--------:|----------------------------------------------------|----------------------------------|
+| 1       | Medium basket, high weekend & afternoon activity   | Casual Weekend Shoppers         |
+| 2       | Small basket, morning-focused, weekday-only        | Routine Essentials Buyers       |
+| 3       | Medium basket, only night, mixed days              | Late-Night Browsers             |
+| 4       | Very large basket, most diversity, weekday-heavy   | High-Intent Bulk Shoppers       |
+| 5       | Small, consistent orders, weekday afternoons       | Regular Repeaters               |
+
+
+### What We Did
 - Selected users’ **first order behavior features**, such as:
   - Number of products
   - Number of aisles
@@ -62,7 +65,7 @@ To group users by behavioral traits and enable personalized insights, we applied
 - Applied **KMeans clustering (k=5)** to segment users into distinct behavior groups.
 - Interpreted and labeled each cluster based on real-world shopping patterns.
 
-### 📈 Why It Matters
+### Why It Matters
 - Reveals **distinct shopper personas**, e.g., “High-Intent Bulk Shoppers” vs. “Casual Weekend Shoppers.”
 - Enables **targeted churn, retention, and funnel analysis** across segments.
 - Supports **personalized marketing** and product strategy for different user types.
@@ -72,30 +75,34 @@ To group users by behavioral traits and enable personalized insights, we applied
 To estimate user retention over time, we applied the **Kaplan-Meier survival analysis** using the `lifelines` Python package in Google Colab.
 ![Kaplan-Meier Result](./screenshot/KaplanMeier.png)
 
-### 🧠 What We Did
+### What We Did
 - Modeled **time-to-churn** based on days between user orders.
 - Segmented retention curves by behavioral clusters.
 - Used the **Kaplan-Meier estimator** to visualize survival probability over time.
 
-### 📈 Why It Matters
+### Why It Matters
 - Helps understand **when users are most likely to churn**.
 - Allows comparison of **retention trends across segments**.
 - Informs lifecycle marketing and re-engagement strategy.
 
 ## 🧠 Key Insights
 
-- Late-night browsers had the **highest churn rate (0.70)** among all segments.
-- Regular repeaters and casual weekend shoppers showed strong early retention but weaker long-term activity.
-- The average user places **15.6 orders** over **156 days** with a churn rate of **~68%**.
+- **High-Intent Bulk Shoppers** have the **highest survival probability**, indicating strong long-term retention. Their larger basket sizes and consistent weekday activity may reflect deeper value or habit-driven use.
+- **Late-Night Browsers** and **Casual Weekend Shoppers** show **faster churn**, likely due to less frequent or more impulsive shopping behaviors.
+- **Routine Essentials Buyers** and **Regular Repeaters** fall in the middle, maintaining moderate retention levels throughout the year.
+- The **Kaplan-Meier survival curves** show clear separation in retention among user segments, validating the effectiveness of our **K-Means clustering**.
+- **High-Intent Bulk Shoppers** retain the longest, while **Casual Weekend Shoppers** and **Late-Night Browsers** show the steepest drop-offs.
+- The early divergence in the curves suggests that **first-time user behavior is highly predictive** of long-term engagement.
+
 
 ## 🔍 Project Summary (Highlight and Limitations)
 
-### ✅ Highlights
+### Highlights
 - Efficiently transferred **713MB+ data (3M+ records)** from Kaggle to **Google Cloud Storage** using API, then ingested to **BigQuery**, reducing manual upload time by **over 80%**.
 - Leveraged `order_number` as a proxy for event timestamps, enabling **accurate time-based funnel and retention analysis** even without raw timestamps.
 - Successfully built an **interactive, filterable dashboard** in Looker Studio to uncover behavioral insights and segment-specific churn risks.
 
-### ⚠️ Limitations
+### Limitations
 - The dataset is originally designed for **product analytics** rather than user lifecycle tracking, which may limit **depth of user behavior insights**.
 - Proxy timestamp (`order_number`) does not account for **real-world gaps between purchases**, which could affect time-sensitive models like churn prediction or seasonality analysis.
 
