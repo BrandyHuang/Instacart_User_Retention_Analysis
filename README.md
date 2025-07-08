@@ -42,7 +42,7 @@ Explore funnel performance, churn rates, and retention trends interactively.
 ## 🧩 User Segmentation
 
 To group users by behavioral traits and enable personalized insights, we applied **unsupervised clustering** using BigQuery ML’s KMeans algorithm.
-[![K-Means Model](./screenshot/KMeans.png)]
+![K-Means Model](./screenshot/KMeans.png)
 
 ### 🧠 What We Did
 - Selected users’ **first order behavior features**, such as:
