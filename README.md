@@ -87,12 +87,12 @@ To estimate user retention over time, we applied the **Kaplan-Meier survival ana
 
 ## 🧠 Key Insights
 
-- **High-Intent Bulk Shoppers** have the **highest survival probability**, indicating strong long-term retention. Their larger basket sizes and consistent weekday activity may reflect deeper value or habit-driven use.
-- **Late-Night Browsers** and **Casual Weekend Shoppers** show **faster churn**, likely due to less frequent or more impulsive shopping behaviors.
-- **Routine Essentials Buyers** and **Regular Repeaters** fall in the middle, maintaining moderate retention levels throughout the year.
-- The **Kaplan-Meier survival curves** show clear separation in retention among user segments, validating the effectiveness of our **K-Means clustering**.
-- **High-Intent Bulk Shoppers** retain the longest, while **Casual Weekend Shoppers** and **Late-Night Browsers** show the steepest drop-offs.
-- The early divergence in the curves suggests that **first-time user behavior is highly predictive** of long-term engagement.
+- High-Intent Bulk Shoppers have the highest survival probability, indicating strong long-term retention. Their larger basket sizes and consistent weekday activity may reflect deeper value or habit-driven use.
+- Late-Night Browsers and Casual Weekend Shoppers show faster churn, likely due to less frequent or more impulsive shopping behaviors.
+- Routine Essentials Buyers and Regular Repeaters fall in the middle, maintaining moderate retention levels throughout the year.
+- The Kaplan-Meier survival curves show clear separation in retention among user segments, validating the effectiveness of our K-Means clustering.
+- High-Intent Bulk Shoppers retain the longest, while Casual Weekend Shoppers and Late-Night Browsers show the steepest drop-offs.
+- The early divergence in the curves suggests that first-time user behavior is highly predictive of long-term engagement.
 
 
 ## 🔍 Project Summary (Highlight and Limitations)
