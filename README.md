@@ -44,6 +44,16 @@ Explore funnel performance, churn rates, and retention trends interactively.
 To group users by behavioral traits and enable personalized insights, we applied **unsupervised clustering** using BigQuery ML’s KMeans algorithm.
 ![K-Means Model](./screenshot/KMeans.png)
 
+### 🔍 Segmentation Result
+
+| # | Segment Name                 |
+|---|------------------------------|
+| 1 | Casual Weekend Shoppers     |
+| 2 | High-Intent Bulk Shoppers   |
+| 3 | Late-Night Browsers         |
+| 4 | Regular Repeaters           |
+| 5 | Routine Essentials Buyers   |
+
 ### 🧠 What We Did
 - Selected users’ **first order behavior features**, such as:
   - Number of products
