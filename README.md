@@ -28,7 +28,7 @@ This project analyzes user purchase behavior on Instacart to uncover actionable 
 
 🔗 **[👉 View the Live Dashboard in Looker Studio](https://lookerstudio.google.com/reporting/be935d0a-10e1-4bcb-956a-df4bf746c59a)**
 
-[![Dashboard Preview](./screenshots/dashboard_preview.png)](https://lookerstudio.google.com/reporting/be935d0a-10e1-4bcb-956a-df4bf746c59a)
+[![Dashboard Preview](./screenshot/Dashboard.png)](https://lookerstudio.google.com/reporting/be935d0a-10e1-4bcb-956a-df4bf746c59a)
 
 
 Explore funnel performance, churn rates, and retention trends interactively.
@@ -42,6 +42,7 @@ Explore funnel performance, churn rates, and retention trends interactively.
 ## 🧩 User Segmentation
 
 To group users by behavioral traits and enable personalized insights, we applied **unsupervised clustering** using BigQuery ML’s KMeans algorithm.
+[![K-Means Model](./screenshot/KMeans.png)]
 
 ### 🧠 What We Did
 - Selected users’ **first order behavior features**, such as:
@@ -59,6 +60,7 @@ To group users by behavioral traits and enable personalized insights, we applied
 ## ⏳ Survival Analysis: Kaplan-Meier Method
 
 To estimate user retention over time, we applied the **Kaplan-Meier survival analysis** using the `lifelines` Python package in Google Colab.
+[![Kaplan-Meier Result](./screenshot/Kaplan-Meier.png)]
 
 ### 🧠 What We Did
 - Modeled **time-to-churn** based on days between user orders.
