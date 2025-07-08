@@ -45,7 +45,7 @@ To group users by behavioral traits and enable personalized insights, we applied
 ![K-Means Model](./screenshot/KMeans.png)
 
 ### 🔍 Segmentation Result
-
+- Segmented users into 5 clusters and named the cluster based on feature contribution.
 | # | Segment Name                 |
 |---|------------------------------|
 | 1 | Casual Weekend Shoppers     |
@@ -63,7 +63,7 @@ To group users by behavioral traits and enable personalized insights, we applied
 - Interpreted and labeled each cluster based on real-world shopping patterns.
 
 ### 📈 Why It Matters
-- Reveals **distinct shopper personas**, e.g., “Weekend Loyal Buyers” vs. “Small Night Shoppers.”
+- Reveals **distinct shopper personas**, e.g., “High-Intent Bulk Shoppers” vs. “Casual Weekend Shoppers.”
 - Enables **targeted churn, retention, and funnel analysis** across segments.
 - Supports **personalized marketing** and product strategy for different user types.
 
